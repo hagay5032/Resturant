@@ -14,7 +14,7 @@ import javax.swing.border.AbstractBorder;
  * to show the dish details. 
  * 
  * @author Hagay Enoch
- * @version 4.12.19
+ * @version 8.12.19
  *  
  */
 public class DishPanel extends RoundedPanel

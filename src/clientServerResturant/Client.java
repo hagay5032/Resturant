@@ -12,7 +12,7 @@ import javax.swing.SwingUtilities;
  * the given info that come back from the server.
  * 
  * @author Hagay Enoch
- * @version 4.12.19
+ * @version 8.12.19
  *  
  */
 public class Client 

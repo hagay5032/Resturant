@@ -19,7 +19,7 @@ import javax.swing.border.AbstractBorder;
  * for a desired quantity , In this case for a dish.
  * 
  * @author Hagay Enoch
- * @version 6.12.19
+ * @version 8.12.19
  *  
  */
 public class QuantitySelect extends RoundedPanel

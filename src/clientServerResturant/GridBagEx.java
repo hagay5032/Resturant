@@ -14,7 +14,7 @@ import javax.swing.JPanel;
  * the list of dishes and quantities, all organize in a convenience panel. 
  * 
  * @author Hagay Enoch
- * @version 6.12.19
+ * @version 8.12.19
  *  
  */
 public class GridBagEx extends JPanel 

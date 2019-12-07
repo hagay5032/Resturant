@@ -33,7 +33,7 @@ import javax.swing.SwingWorker;
  * can cause unexpected problems at the subclasses.
  * 
  * @author Hagay Enoch
- * @version 5.12.19
+ * @version 8.12.19
  *  
  */
 public final class MenuGUI extends JPanel 

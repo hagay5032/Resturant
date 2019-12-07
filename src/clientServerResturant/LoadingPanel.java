@@ -11,7 +11,7 @@ import javax.swing.JLabel;
  * until the information received.
  * 
  * @author Hagay Enoch
- * @version 4.12.19
+ * @version 8.12.19
  *  
  */
 public class LoadingPanel extends  RoundedPanel {

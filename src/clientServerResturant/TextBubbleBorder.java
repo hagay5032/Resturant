@@ -19,6 +19,7 @@ import javax.swing.border.AbstractBorder;
  * decorative interface
  * 
  * @author Hagay Enoch
+ * @version 8.12.19
  *
  */
 public class TextBubbleBorder extends AbstractBorder {

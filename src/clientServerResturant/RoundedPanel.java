@@ -14,7 +14,8 @@ import javax.swing.JPanel;
  * interface, with a shadow effect.
  * 
  * @author Hagay Enoch
- *
+ * @version 8.12.19
+ * 
  */
 public class RoundedPanel extends JPanel
 {

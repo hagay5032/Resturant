@@ -53,8 +53,8 @@ public class GridBagEx extends JPanel
 	/**
 	 * Add a dish to this panel and place as a entry in a table.
 	 * 
-	 * @param dishPanel the dish panel with all its 
-	 * @param dishNum
+	 * @param dishPanel reference to the dish panel. 
+	 * @param dishNum the name of this dish.
 	 */
 	public void addDish(DishPanel dishPanel, int dishNum) 
 	{

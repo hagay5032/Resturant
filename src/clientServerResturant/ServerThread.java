@@ -128,7 +128,6 @@ public class ServerThread extends Thread
 		{
 			Thread.sleep(milliSeconds);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
     }

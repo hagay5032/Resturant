@@ -42,19 +42,20 @@ public class TextBubbleBorder extends AbstractBorder {
     public TextBubbleBorder(Color color) 
     {
         this(color, 4, 8, 7);
-    }
+    } 
 
     /**
+     * Constructor for TextBubbleBorder.
      * 
-     * @param color
-     * @param thickness
-     * @param radii
-     * @param pointerSize
+     * @param color the color of the border.
+     * @param thickness the thickness of the border.
+     * @param arcs the arcs of the corners.
+     * @param pointerSize the pointer of the bauble shape.
      */
-    TextBubbleBorder(Color color, int thickness, int radii, int pointerSize)
+    public TextBubbleBorder(Color color, int thickness, int arcs, int pointerSize)
     {
         this.thickness = thickness;
-        this.arcs = radii;
+        this.arcs = arcs;
         this.pointerSize = pointerSize;
         this.color = color;
 
@@ -65,7 +66,7 @@ public class TextBubbleBorder extends AbstractBorder {
                 RenderingHints.KEY_ANTIALIASING,
                 RenderingHints.VALUE_ANTIALIAS_ON);
 
-        int pad = radii + strokePad;
+        int pad = arcs + strokePad;
         pad /= 5;
         int bottomPad = pad + pointerSize + strokePad;
         insets = new Insets(pad, pad, bottomPad, pad);

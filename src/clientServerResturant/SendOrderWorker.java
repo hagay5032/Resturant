@@ -32,7 +32,7 @@ public class SendOrderWorker extends SwingWorker<Void, Void>
 	/**
 	 * Constructor for GetMenuWorker.
 	 * @param _continer is the reference to menu panel.
-	 * @param _foodList is the reference to food-List array of the menu panel. 
+	 * @param msg the message to sent to the server.
 	 */
 	public SendOrderWorker(OrderPanel _continer, String msg)
 	{

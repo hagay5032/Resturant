@@ -37,7 +37,6 @@ public class GetMenuWorker extends SwingWorker<Void, Void>
 	/**
 	 * Constructor for GetMenuWorker.
 	 * @param _continer is the reference to menu panel.
-	 * @param _foodList is the food-List of the menu panel. 
 	 */
 	public GetMenuWorker(MenuGUI _continer)
 	{

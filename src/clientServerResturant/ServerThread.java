@@ -98,8 +98,8 @@ public class ServerThread extends Thread
             	{
             		str = in.readLine();
 					//*********************************************************
-					// NOT REQUIRED IN THE TASK- But essential for a
-            		// real/working program  - Here needed processing the order
+					// TODO - NOT REQUIRED IN THE TASK- But essential for a
+            		// real/working program  - Here need to process the order
         			// that come from the client - line by line 
 					//*********************************************************	
             		System.out.println(str);

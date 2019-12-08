@@ -1,12 +1,15 @@
 package clientServerResturant;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.InetAddress;
 import java.net.Socket;
+import java.net.URL;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 import javax.swing.SwingWorker;
 
@@ -109,9 +112,16 @@ public class GetMenuWorker extends SwingWorker<Void, Void>
      */
 	public void getMenuFromServer() throws Exception
 	{
-		String line;		
+		String line = null; 		
 		
-		socket = new Socket( InetAddress.getByName(host), 3334);
+    	// reading the ip and port from the configuration file
+    	URL url = Server.class.getResource("clientConfig.config");
+    	Scanner scan = new Scanner(new File(url.getPath()));
+    	int port = scan.nextInt();
+    	host = scan.next();
+    	scan.close();
+		
+		socket = new Socket( InetAddress.getByName(host), port);
 	    out = new PrintWriter(socket.getOutputStream(), true);
 	    in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 	     
@@ -267,7 +277,14 @@ public class GetMenuWorker extends SwingWorker<Void, Void>
 		{
 	    	try 
 	    	{
-	    	    Socket Dsocket = new Socket( InetAddress.getByName(host), 3334);
+	        	// reading the ip and port from the configuration file
+	        	URL url = Server.class.getResource("clientConfig.config");
+	        	Scanner scan = new Scanner(new File(url.getPath()));
+	        	int port = scan.nextInt();
+	        	host = scan.next();
+	        	scan.close();
+	        	
+	    	    Socket Dsocket = new Socket( InetAddress.getByName(host), port);
 	    	    PrintWriter Dout = new PrintWriter(
 	    	    						Dsocket.getOutputStream(), true);
 	    	    BufferedReader Din = new BufferedReader(new InputStreamReader(

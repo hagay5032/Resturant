@@ -1,8 +1,9 @@
 package clientServerResturant;
 
 import java.net.*;
-
+import java.util.Scanner;
 import java.io.*;
+
 /**
  * This class is for creating a server that will listen to many clients.
  * Any clients that connect to the server need that the first line of his packet
@@ -24,10 +25,17 @@ public class Server
     {
         ServerSocket srv = null;
         boolean listening = true;
+        int port = 0;
         try 
         {
+        	// reading the port from the configuration file
+        	URL url = Server.class.getResource("serverConfig.config");
+        	Scanner scan = new Scanner(new File(url.getPath()));
+        	port = scan.nextInt();
+        	scan.close();
+        	
         	//initializing the server to listen on port 3334
-            srv = new ServerSocket(3334);
+            srv = new ServerSocket(port);
 
             System.out.println("Server's ready");
             Socket socket = null;
@@ -51,3 +59,5 @@ public class Server
         }
     } 
 }
+
+

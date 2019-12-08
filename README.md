@@ -17,3 +17,7 @@ The formate for the menu file is 5 rows in sequence for each dish:
 
 For example: see the 'menu' file.
 
+This project I made with eclips IDE version 2019-09 R(14.3.0), with JDK version 13.0.1.
+And if you have an eclipse IDE on your computer, you can import this repository from inside the eclipse IDE that has a support git extension.
+
+

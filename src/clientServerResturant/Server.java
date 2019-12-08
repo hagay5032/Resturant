@@ -29,7 +29,7 @@ public class Server
         try 
         {
         	// reading the port from the configuration file
-        	URL url = Server.class.getResource("serverConfig.config");
+        	URL url = Server.class.getResource("serverConfig");
         	Scanner scan = new Scanner(new File(url.getPath()));
         	port = scan.nextInt();
         	scan.close();

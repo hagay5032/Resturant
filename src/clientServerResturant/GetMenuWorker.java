@@ -115,7 +115,7 @@ public class GetMenuWorker extends SwingWorker<Void, Void>
 		String line = null; 		
 		
     	// reading the ip and port from the configuration file
-    	URL url = Server.class.getResource("clientConfig.config");
+    	URL url = Server.class.getResource("clientConfig");
     	Scanner scan = new Scanner(new File(url.getPath()));
     	int port = scan.nextInt();
     	host = scan.next();
@@ -278,7 +278,7 @@ public class GetMenuWorker extends SwingWorker<Void, Void>
 	    	try 
 	    	{
 	        	// reading the ip and port from the configuration file
-	        	URL url = Server.class.getResource("clientConfig.config");
+	        	URL url = Server.class.getResource("clientConfig");
 	        	Scanner scan = new Scanner(new File(url.getPath()));
 	        	int port = scan.nextInt();
 	        	host = scan.next();

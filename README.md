@@ -1,8 +1,8 @@
 # Resturant-Client-Server
 This is an eclipse java project for running a resturant server that holds the menu, And clients that can order from the server.
 
-This is a one of my university tasks projects, And I share it with pleasure, Hopping to here thoughts and getting notes for 
-improving design and code.
+This is a fun program to simulate a client and server comunication over TCP, And I share it with pleasure, Hope to hear thoughts and getting notes for 
+improving the design and the code.
 
 The configurations files are for the PORT and IP parameters for the client and server respectively.
 
@@ -19,5 +19,3 @@ For example: see the 'menu' file.
 
 This project I made with eclips IDE version 2019-09 R(14.3.0), with JDK version 13.0.1.
 And if you have an eclipse IDE on your computer, you can import this repository from inside the eclipse IDE that has a support git extension.
-
-
